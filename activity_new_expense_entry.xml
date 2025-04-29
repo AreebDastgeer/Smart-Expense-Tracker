@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewExpenseEntry">
+
+
+    <EditText
+        android:id="@+id/edtdate"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="66dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/select_date"
+        android:focusable="false"
+         />
+
+    <EditText
+        android:id="@+id/edtcategory"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtdate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="66dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_category" />
+
+    <EditText
+        android:id="@+id/edtamount"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtcategory"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="298dp"
+        android:layout_marginEnd="62dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_amount" />
+
+    <Button
+        android:id="@+id/btnsave"
+        android:layout_width="246dp"
+        android:layout_height="97dp"
+        android:layout_below="@+id/edtdate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="359dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="358dp"
+        android:backgroundTint="#0996A6"
+        android:onClick="SaveIntoDatabase"
+        android:text="@string/save_expense_record"
+        android:textColor="#FAF2F2"
+        android:textColorLink="#29CADE"
+        android:textSize="24sp"
+        app:iconTint="#30C6D9" />
+
+</RelativeLayout>
